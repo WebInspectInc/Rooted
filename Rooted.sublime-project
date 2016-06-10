@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"name": "Rooted",
+			"path": "/Users/howlermiller/haxeprojects/Rooted"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel",
+			"path": "/Users/howlermiller/haxelib/flixel/4,0,1/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel Addons",
+			"path": "/Users/howlermiller/haxelib/flixel-addons/2,0,0/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Haxe",
+			"path": "/usr/local/lib/haxe/std"
+		}
+	]
+}
