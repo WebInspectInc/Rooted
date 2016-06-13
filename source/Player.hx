@@ -31,6 +31,7 @@ class Player extends FlxSprite {
 		animation.add("jump", [8]);
 		animation.add("fall", [9]);
 		animation.add("dead", [12]);
+		animation.add("rooted", [14]);
 
 		setSize(20, 28);
 		offset.set(6, 4);
@@ -72,8 +73,8 @@ class Player extends FlxSprite {
 			velocity.y = velocity.y * 0.5;
 		}
 
-		if (FlxG.keys.pressed.X && isTouching(FlxObject.WALL)) {
-			rooted = true;
+		if (FlxG.keys.pressed.X && isTouching(FlxObject.ANY)) {
+			rootCharacter();
 		}
 
 		if (rooted) {
@@ -89,6 +90,10 @@ class Player extends FlxSprite {
 			x = 0;
 	}
 
+	private function rootCharacter() {
+		rooted = true;
+	}
+
 	private function animate() {
 		if ((velocity.y <= 0) && (!isTouching(FlxObject.FLOOR))) {
 			animation.play("jump");
@@ -102,6 +107,9 @@ class Player extends FlxSprite {
 			} else {
 				animation.play("walk");
 			}
+		}
+		if (rooted) {
+			animation.play("rooted");
 		}
 	}
 
