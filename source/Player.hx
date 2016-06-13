@@ -44,11 +44,11 @@ class Player extends FlxSprite {
 		acceleration.x = 0;
 		acceleration.y = GRAVITY;
 
-		if (FlxG.keys.pressed.LEFT) {
+		if (FlxG.keys.pressed.LEFT && !rooted) {
 			flipX = true;
 			direction = -1;
 			acceleration.x -= ACCELERATION;
-		} else if (FlxG.keys.pressed.RIGHT) {
+		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
 			flipX = false;
 			direction = 1;
 			acceleration.x += ACCELERATION;
@@ -72,7 +72,7 @@ class Player extends FlxSprite {
 			velocity.y = velocity.y * 0.5;
 		}
 
-		if (FlxG.keys.pressed.C && isTouching(FlxObject.WALL)) {
+		if (FlxG.keys.pressed.X && isTouching(FlxObject.WALL)) {
 			rooted = true;
 		}
 
