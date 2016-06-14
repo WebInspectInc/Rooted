@@ -38,6 +38,9 @@ class LevelLoader {
 		for (enemy in getLevelObjects(tiledMap, "enemies"))
 			state.enemies.add(new Enemy(enemy.x, enemy.y - 32));
 
+		for (playform in getLevelObjects(tiledMap, "movingplats"))
+			state.platforms.add(new Platform(platform.x, platform.y - 32, platform.width, platform.height));
+
 		var playerPos:TiledObject = getLevelObjects(tiledMap, "player")[0];
 		state.player.setPosition(playerPos.x, playerPos.y - TILE_SIZE);
 	}
