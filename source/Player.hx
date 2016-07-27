@@ -18,6 +18,9 @@ class Player extends FlxSprite {
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 32;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.tinycharacter__png;
+	private static inline var START_HEALTH:Float = 3;
+
+	private var invincibility:Int = 0;
 
 	public var rooted:Bool = false;
 	public var direction:Int = 1;
@@ -36,6 +39,7 @@ class Player extends FlxSprite {
 		setSize(20, 28);
 		offset.set(6, 4);
 
+		health = START_HEALTH;
 		drag.x = DRAG;
 		acceleration.y = GRAVITY;
 		maxVelocity.set(WALK_SPEED, FALLING_SPEED);
@@ -90,6 +94,16 @@ class Player extends FlxSprite {
 			x = 0;
 	}
 
+	public function hit() {
+		if (invincibility <= 0) {
+			hurt(1);
+			velocity.y = -velocity.y * 2;
+			velocity.x = -velocity.x * 2;
+			Reg.health -= 1;
+			invincibility = 200;
+		}
+	}
+
 	private function rootCharacter() {
 		rooted = true;
 	}
@@ -116,6 +130,10 @@ class Player extends FlxSprite {
 	override public function update(elapsed:Float):Void {
 		move();
 		animate();
+
+		if (invincibility > 0) {
+			invincibility -= 1;
+		}
 
 		super.update(elapsed);
 	}

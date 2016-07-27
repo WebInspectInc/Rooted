@@ -59,7 +59,7 @@ class Enemy extends FlxSprite {
 		if (player.rooted) {
 			kill();
 		} else {
-			player.kill();
+			player.hit();
 		}
 	}
 }

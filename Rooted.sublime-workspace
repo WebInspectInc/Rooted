@@ -1,1 +1,1467 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"FlxCam",
+				"FlxCameraFollowStyle	class"
+			],
+			[
+				"ti",
+				"tiled	package"
+			],
+			[
+				"til",
+				"FlxTiledAsset"
+			],
+			[
+				"addres",
+				"address_table"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"feat",
+				"featured_images"
+			],
+			[
+				"field",
+				"field_name"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"save",
+				"saveCustomerAddress"
+			],
+			[
+				"address",
+				"address_id"
+			],
+			[
+				"add",
+				"addressid"
+			],
+			[
+				"sql",
+				"sql_2"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"acti",
+				"active_shirt_args"
+			],
+			[
+				"ord",
+				"orderby"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"header",
+				"header_image"
+			],
+			[
+				"fs",
+				"fs	font-style: ${italic};"
+			],
+			[
+				"over",
+				"overlay_img"
+			],
+			[
+				"overlay",
+				"overlay_open"
+			],
+			[
+				"wpr",
+				"wp_redirect"
+			],
+			[
+				"query",
+				"query_vars"
+			],
+			[
+				"selected",
+				"selected_button"
+			],
+			[
+				"select",
+				"selected_button"
+			],
+			[
+				"trans",
+				"trans_table"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"widget_cat",
+				"widget_categories_args_filter"
+			],
+			[
+				"exclud",
+				"exclude_arr"
+			],
+			[
+				"Stripe",
+				"Stripe_Checkout"
+			],
+			[
+				"custom",
+				"custom_thing"
+			],
+			[
+				"cust",
+				"custom_thing"
+			],
+			[
+				"wf_set",
+				"wf_setting_image"
+			],
+			[
+				"table",
+				"table_name"
+			],
+			[
+				"get_defin",
+				"get_defined_vars"
+			],
+			[
+				"date_default",
+				"date_default_timezone_set"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/LevelLoader.hx",
+			"settings":
+			{
+				"buffer_size": 1649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/Enemy.hx",
+			"settings":
+			{
+				"buffer_size": 1272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+			"settings":
+			{
+				"buffer_size": 40810,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/Main.hx",
+			"settings":
+			{
+				"buffer_size": 179,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/Player.hx",
+			"settings":
+			{
+				"buffer_size": 2820,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "newclas",
+		"selected_items":
+		[
+			[
+				"newclas",
+				"Haxe: New Class"
+			],
+			[
+				"haxe",
+				"Haxe: Organize Imports"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"synthtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mcip",
+				"Markdown Preview: Copy to Clipboard"
+			],
+			[
+				"markdownpre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"syntphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"synsas",
+				"Set Syntax: Sass"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syntatext",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"syntamark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"makrprev",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"markdopr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"synmarkd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syntmarkdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown GFM"
+			]
+		],
+		"width": 493.0
+	},
+	"console":
+	{
+		"height": 207.0,
+		"history":
+		[
+			"haxelib",
+			"pwd",
+			"ls",
+			"cd",
+			"haxelib",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/howlermiller/haxeprojects/Rooted",
+		"/Users/howlermiller/haxeprojects/Rooted/assets",
+		"/Users/howlermiller/haxeprojects/Rooted/assets/images",
+		"/Users/howlermiller/haxeprojects/Rooted/source"
+	],
+	"file_history":
+	[
+		"/Users/howlermiller/haxeprojects/Rooted/source/Platforms.hx",
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxObject.hx",
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/Player.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/.gitignore",
+		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/.gitignore",
+		"/Users/howlermiller/haxeprojects/Rooted/.git/config",
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxG.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/Project.xml",
+		"/Users/howlermiller/haxeprojects/Dwellers/Project.xml",
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/text/FlxText.hx",
+		"/Users/howlermiller/haxeprojects/FlixelTut/source/Main.hx",
+		"/Users/howlermiller/haxeprojects/FlixelTut/Project.xml",
+		"/Users/howlermiller/.bash_profile",
+		"/Users/howlermiller/.zshrc",
+		"/Users/howlermiller/Downloads/haxegon-master/examples/Complete Games/Night (by increpare)/readme.MD",
+		"/Users/howlermiller/Downloads/haxegon-master/readme.MD",
+		"/Users/howlermiller/www/findtim/content/2-blog/starting-stopping-and-more/blogarticle.txt",
+		"/Users/howlermiller/Downloads/wp_sc_addresses(1).csv",
+		"/Users/howlermiller/Downloads/wp_sc_addresses.csv",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/get_addresses.sql",
+		"/Users/howlermiller/Downloads/test.csv",
+		"/Users/howlermiller/Downloads/wp_sc_addresses.json",
+		"/Users/howlermiller/www/findtim/site/config/config.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/everyone-has-a-mountain/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/18-raining-stars/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/craftsmanship/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/stars-at-night/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/templates/chapters.php",
+		"/Users/howlermiller/www/findtim/assets/css/main.css",
+		"/Users/howlermiller/www/findtim/assets/css/map.css",
+		"/private/var/folders/3z/_mgsyd8955lb9rd8m95qlptc0000gn/T/ca31eb09-ea40-4565-9f67-ac1ec9981738/domains/lit.findtim.me/html/assets/css/main.css",
+		"/Users/howlermiller/www/findtim/content/2-blog/17-girl-scouts-galore/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/google89dce2d4fb9d1ab1.html",
+		"/Users/howlermiller/www/findtim/site/templates/blog.php",
+		"/Users/howlermiller/www/findtim/content/chapters/chapters.txt",
+		"/Users/howlermiller/www/findtim/site/snippets/header.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/becoming-a-man/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/02-100-words-SD/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/snippets/footer.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/16-100-words-TX/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/templates/blogarticle.php",
+		"/Users/howlermiller/www/findtim/content/home/home.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/a-great-luxury/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/a-bit-of-perspective/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/14-benefits-of-solo-travel/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/snippets/disqus.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/benefits-of-solo-travel/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/timmys-guide-to-adventures/blogarticle.txt",
+		"/Users/howlermiller/Desktop/pastry.markdown",
+		"/Users/howlermiller/www/findtim/content/2-blog/13-i-am-racist/everyone-has-a-mountain/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/templates/home.php",
+		"/Users/howlermiller/www/findtim/site/templates/about.php",
+		"/Users/howlermiller/www/findtim/content/1-about/about.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/13-i-am-racist/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/01-on-packing/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/00-prolegomenon/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/12-clay-houses/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/11-100-words-NM/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/blueprints/blogarticle.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/10-going-barefoot/blogarticle.txt",
+		"/Users/howlermiller/www/DIY/css/style.css",
+		"/Users/howlermiller/www/findtim/content/2-blog/09-my-terrible-problem/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/09-a-bit-of-perspective/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/08-100-words-WY/blogarticle.txt",
+		"/Users/howlermiller/andhelaunchr/myinstructions.markdown",
+		"/Users/howlermiller/andhelaunchr/users.csv",
+		"/Users/howlermiller/andhelaunchr/sorted_users.csv",
+		"/Users/howlermiller/www/findtim/content/2-blog/07-a-brief-detour/blogarticle.txt",
+		"/Users/howlermiller/Desktop/usa.svg",
+		"/Users/howlermiller/www/findtim/content/2-blog/07-a-goal-in-mind/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/06-a-few-updates/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/06-starting-stopping-and-more/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/site/templates/feed.php",
+		"/Users/howlermiller/www/findtim/content/2-blog/feed/feed.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/05-sunday-in-the-park/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/05-sunday-in-the-park/06-starting-stopping-and-more/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/focus/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/sunday-in-the-park/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/tools/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/03-monday-on-the-farm/blogarticle.txt",
+		"/Users/howlermiller/andhelaunchr/test.csv",
+		"/Users/howlermiller/www/findtim/content/2-blog/03-a-monday-update/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/03-boredom/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/03-tools/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/02-my-second-article/blogarticle.txt",
+		"/Users/howlermiller/www/findtim/content/2-blog/01-my-first-article/blogarticle.txt",
+		"/Users/howlermiller/www/kirby/assets/css/main.css",
+		"/Users/howlermiller/www/kirby/site/templates/default.php",
+		"/Users/howlermiller/www/kirby/site/snippets/header.php",
+		"/Users/howlermiller/www/kirby/site/templates/blog.php",
+		"/Users/howlermiller/www/kirby/site/templates/blogarticle.php",
+		"/Users/howlermiller/www/kirby/site/config/config.php",
+		"/Users/howlermiller/www/kirby/content/3-blog/01-my-first-article/blogarticle.txt",
+		"/Users/howlermiller/www/kirby/site/blueprints/blogarticle.php",
+		"/Users/howlermiller/www/kirby/content/1-about/about.txt",
+		"/Users/howlermiller/www/kirby/site/templates/home.php",
+		"/Users/howlermiller/www/kirby/content/3-blog/02-my-second-article/blogarticle.txt",
+		"/Users/howlermiller/www/kirby/site/blueprints/blog.php",
+		"/Users/howlermiller/www/kirby/site/blueprints/home.php",
+		"/Users/howlermiller/www/kirby/content/home/home.txt",
+		"/Users/howlermiller/www/kirby/site/snippets/footer.php",
+		"/Users/howlermiller/www/kirby/site/tags/wikipedia.php",
+		"/Users/howlermiller/www/kirby/kirby/test/etc/site/tags/a.php",
+		"/Users/howlermiller/www/kirby/kirby/extensions/methods.php",
+		"/Users/howlermiller/www/kirby/site/snippets/menu.php",
+		"/Users/howlermiller/www/kirby/panel/assets/scss/components/_main.scss",
+		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/index.php",
+		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/js/shirts_admin.js",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/payment/misc-functions.php",
+		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/frontend-files.php",
+		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/shirts/ajax.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/admin.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/within-the-fold.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/shirt-functions.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_product_page.js",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/connect_form.phtml",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/shortcode_connect.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/ajax.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/content-featured-wf_shirt.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/phtml/successful-shirts.phtml",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/phtml/view-addresses.phtml",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/public/includes/misc-functions.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_admin.js",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/wf-menu.php",
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/shortcodes.php",
+		"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe/public/includes/misc-functions.php",
+		"/Users/howlermiller/www/wordpress/wp-content/plugins/ignitiondeck-crowdfunding/js/ignitiondeck-admin.js"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"/Users/howlermiller/www/withinthefold/wp-content/plugins/",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/stripe/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugin/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
+			"/Users/howlermiller/www/wordpress/wp-content/themes/within-the-fold",
+			"/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"kill",
+			"alive",
+			"kill",
+			"alive",
+			"origin",
+			"offset",
+			"pressed",
+			"16",
+			"tiletiles__png",
+			"magecity__png",
+			"16",
+			"center",
+			"screen",
+			"center",
+			"_map",
+			"proper",
+			"touching",
+			"collidableTileLayers",
+			"settile",
+			"update",
+			"loadobject",
+			"group",
+			"state",
+			"sate",
+			"group",
+			"tileset",
+			"propert",
+			"loadobject",
+			"state",
+			"player",
+			"_player",
+			"floor",
+			"\"charged\"",
+			"<p>",
+			".\n",
+			"'",
+			"Chapter03",
+			"chapter03",
+			"Ingles",
+			"...",
+			"southdakota",
+			"Chapter01",
+			"chapter01",
+			"'",
+			"’",
+			"iowa.jpg",
+			"image:",
+			"33",
+			"4",
+			"33",
+			"4",
+			"south",
+			")",
+			"<div class=\"span-1\">",
+			"<div class=\"span-1-2\">",
+			"48",
+			"\"",
+			"	",
+			"no_charge",
+			"		",
+			"no_charge",
+			"chapter_01",
+			"h2",
+			"page",
+			"padding:",
+			"padding: 40",
+			"min-wi",
+			"title",
+			"border",
+			"red",
+			"source sans",
+			"'ttf",
+			"woff",
+			"Source Sans Pro",
+			"font-size",
+			"charged",
+			"test",
+			"charged",
+			"pk_live",
+			"$data_key",
+			"data_key",
+			"setpublishablekey",
+			"saveConnectCharge",
+			"test_mode",
+			"charged",
+			"a shir",
+			"shirt id",
+			"charge::c",
+			"chargeCu",
+			"purchase-shirts",
+			"charge-shirts",
+			"charge",
+			"charge\" .",
+			"charge' .",
+			"charge",
+			"wf admin",
+			"featured_args",
+			"featured_query",
+			"Manage Shirts",
+			"chargeCustomersForProduct",
+			"chargeCustomersFor",
+			"chargeCustomer",
+			"a shirt",
+			"vomiting",
+			"howies",
+			"10",
+			"sc_transactions",
+			"shirts_are_purchased",
+			"shirt purchases",
+			"chargeCustomersForProduct",
+			"purchase-shirts",
+			"charge",
+			"charge shirts",
+			"$options",
+			"overlay__hidden",
+			"open_overlay",
+			"payment-overlay",
+			"200px",
+			"image_ids",
+			"featured images",
+			"max-width",
+			"is_black",
+			"featured__info",
+			":after",
+			"after",
+			"$medium-bp",
+			"image",
+			"a-blog-page"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/LevelLoader.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1153,
+								1153
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 61,
+								"modified": false,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 520.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/Enemy.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								442,
+								442
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 85,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 163.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2922,
+								2960
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2936.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/Main.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								115
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/PlayState.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								610,
+								610
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 39,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 249.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "source/Player.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2043,
+								2043
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1384.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 140.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Rooted.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"player",
+				"Rooted/source/Player.hx"
+			],
+			[
+				"main",
+				"Rooted/source/Main.hx"
+			],
+			[
+				"playst",
+				"Rooted/source/PlayState.hx"
+			],
+			[
+				"playsta",
+				"Dwellers/source/PlayState.hx"
+			],
+			[
+				"project",
+				"FlixelTut/Project.xml"
+			],
+			[
+				"raining",
+				"content/2-blog/18-raining-stars/blogarticle.txt"
+			],
+			[
+				"config",
+				"site/config/config.php"
+			],
+			[
+				"blogphp",
+				"site/templates/blog.php"
+			],
+			[
+				"confi",
+				"site/config/config.php"
+			],
+			[
+				"chap",
+				"site/templates/chapters.php"
+			],
+			[
+				"sitconfig",
+				"site/config/config.php"
+			],
+			[
+				"maincs",
+				"assets/css/main.css"
+			],
+			[
+				"heade",
+				"site/snippets/header.php"
+			],
+			[
+				"aboutphp",
+				"site/templates/about.php"
+			],
+			[
+				"100",
+				"content/2-blog/02-100-words-SD/blogarticle.txt"
+			],
+			[
+				"footer",
+				"site/snippets/footer.php"
+			],
+			[
+				"home",
+				"content/home/home.txt"
+			],
+			[
+				"benefits",
+				"content/2-blog/14-benefits-of-solo-travel/blogarticle.txt"
+			],
+			[
+				"dis",
+				"site/snippets/disqus.php"
+			],
+			[
+				"blogarticphp",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"maincss",
+				"assets/css/main.css"
+			],
+			[
+				"onpack",
+				"content/2-blog/01-on-packing/blogarticle.txt"
+			],
+			[
+				"01",
+				"content/2-blog/02-100-words-SD/blogarticle.txt"
+			],
+			[
+				"aboutt",
+				"content/1-about/about.txt"
+			],
+			[
+				"head",
+				"site/snippets/header.php"
+			],
+			[
+				"foot",
+				"site/snippets/footer.php"
+			],
+			[
+				"blueblog",
+				"site/blueprints/blogarticle.php"
+			],
+			[
+				"blogarti",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"blgart",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"blogar",
+				"content/2-blog/01-on-packing/blogarticle.txt"
+			],
+			[
+				"100wor",
+				"content/2-blog/02-100-words-SD/blogarticle.txt"
+			],
+			[
+				"about",
+				"content/1-about/about.txt"
+			],
+			[
+				"feedtxt",
+				"content/2-blog/feed/feed.txt"
+			],
+			[
+				"headphp",
+				"site/snippets/header.php"
+			],
+			[
+				"blog",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"startingst",
+				"content/2-blog/06-starting-stopping-and-more/blogarticle.txt"
+			],
+			[
+				"sunday",
+				"content/2-blog/05-sunday-in-the-park/blogarticle.txt"
+			],
+			[
+				"css",
+				"assets/css/main.css"
+			],
+			[
+				"header",
+				"site/snippets/header.php"
+			],
+			[
+				"article",
+				"site/blueprints/blogarticle.php"
+			],
+			[
+				"blogart",
+				"site/templates/blogarticle.php"
+			],
+			[
+				"myfirstar",
+				"content/2-blog/01-my-first-article/blogarticle.txt"
+			],
+			[
+				"blogtext",
+				"content/3-blog/01-my-first-article/blogarticle.txt"
+			],
+			[
+				"",
+				"site/templates/home.php"
+			],
+			[
+				"blue",
+				"site/blueprints/default.php"
+			],
+			[
+				"sitetag",
+				"kirby/test/etc/site/tags/a.php"
+			],
+			[
+				"method",
+				"kirby/extensions/methods.php"
+			],
+			[
+				"men",
+				"site/snippets/menu.php"
+			],
+			[
+				"foo",
+				"site/snippets/footer.php"
+			],
+			[
+				"menu",
+				"site/snippets/menu.php"
+			],
+			[
+				"blogph",
+				"site/templates/blog.php"
+			],
+			[
+				"template",
+				"site/templates/home.php"
+			],
+			[
+				"mainscs",
+				"panel/assets/scss/components/_main.scss"
+			],
+			[
+				"templates",
+				"site/templates/home.php"
+			],
+			[
+				"index",
+				"within-the-fold/index.php"
+			],
+			[
+				"misc",
+				"stripe/public/includes/misc-functions.php"
+			],
+			[
+				"shiaja",
+				"within-the-fold/shirts/ajax.php"
+			],
+			[
+				"adminjs",
+				"within-the-fold/js/shirts_admin.js"
+			],
+			[
+				"wfmen",
+				"within-the-fold/wf-menu.php"
+			],
+			[
+				"within",
+				"within-the-fold/within-the-fold.php"
+			],
+			[
+				"shortcod",
+				"stripe/includes/shortcode_connect.php"
+			],
+			[
+				"shirtjs",
+				"within-the-fold/js/shirts_product_page.js"
+			],
+			[
+				"shirtf",
+				"within-the-fold/shirts/shirt-functions.php"
+			],
+			[
+				"ajax",
+				"within-the-fold/shirts/ajax.php"
+			],
+			[
+				"mis",
+				"stripe/public/includes/misc-functions.php"
+			],
+			[
+				"admin",
+				"within-the-fold/shirts/admin.php"
+			],
+			[
+				"new",
+				"within-the-fold/phtml/add-new.phtml"
+			],
+			[
+				"confeat",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"class",
+				"stripe/class-stripe-checkout.php"
+			],
+			[
+				"stripecheck",
+				"stripe/stripe-checkout.php"
+			],
+			[
+				"inde",
+				"within-the-fold/index.php"
+			],
+			[
+				"manageshi",
+				"within-the-fold/phtml/manage-shirts.phtml"
+			],
+			[
+				"with",
+				"within-the-fold/within-the-fold.php"
+			],
+			[
+				"miscfu",
+				"stripe/public/includes/misc-functions.php"
+			],
+			[
+				"shirtadm",
+				"within-the-fold/js/shirts_admin.js"
+			],
+			[
+				"shirtphp",
+				"within-the-fold/shirts/shirt-functions.php"
+			],
+			[
+				"contwf",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"contenshi",
+				"within-the-fold/content-shirt.php"
+			],
+			[
+				"indexphp",
+				"within-the-fold/index.php"
+			],
+			[
+				"withinadmin",
+				"within-the-fold/shirts/admin.php"
+			],
+			[
+				"singlwfsh",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"contshi",
+				"within-the-fold/content-shirt.php"
+			],
+			[
+				"singlwf",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"singlwfs",
+				"within-the-fold/single-wf_shirts.php"
+			],
+			[
+				"sing",
+				"within-the-fold/single-wf_shirts.php"
+			],
+			[
+				"featuwf",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"shirtpage",
+				"within-the-fold/js/shirts_product_page.js"
+			],
+			[
+				"singwf",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"scss",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"contentshirt",
+				"within-the-fold/content-shirt.php"
+			],
+			[
+				"stylescs",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"indexph",
+				"within-the-fold/index.php"
+			],
+			[
+				"singleshirt",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"styl",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"ajaxph",
+				"within-the-fold/shirts/ajax.php"
+			],
+			[
+				"classt",
+				"stripe/class-stripe-checkout.php"
+			],
+			[
+				"jquer",
+				"within-the-fold/js/jquery.payment.js"
+			],
+			[
+				"stylscs",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"function",
+				"stripe/public/includes/misc-functions.php"
+			],
+			[
+				"connect",
+				"stripe/includes/shortcode_connect.php"
+			],
+			[
+				"shirtfun",
+				"within-the-fold/shirts/shirt-functions.php"
+			],
+			[
+				"sty",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"feat",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"singshi",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"contshir",
+				"within-the-fold/content-shirt.php"
+			],
+			[
+				"stripeconn",
+				"stripe/includes/shortcode_connect.php"
+			],
+			[
+				"fire",
+				"within-the-fold/page-firespring.php"
+			],
+			[
+				"connec",
+				"stripe/includes/shortcode_connect.php"
+			],
+			[
+				"singshir",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"singlshi",
+				"within-the-fold/single-wf_shirts.php"
+			],
+			[
+				"conshi",
+				"within-the-fold/content-shirt.php"
+			],
+			[
+				"confea",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"contsingsh",
+				"within-the-fold/content-single-wf_shirt.php"
+			],
+			[
+				"style",
+				"within-the-fold/src/sass/style.scss"
+			],
+			[
+				"short",
+				"within-the-fold/shirts/shortcodes.php"
+			],
+			[
+				"shorconn",
+				"stripe/includes/shortcode_connect.php"
+			],
+			[
+				"featwf",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"frontf",
+				"within-the-fold/frontend-files.php"
+			],
+			[
+				"adminp",
+				"within-the-fold/shirts/admin.php"
+			],
+			[
+				"shirtfu",
+				"within-the-fold/shirts/shirt-functions.php"
+			],
+			[
+				"adminphp",
+				"within-the-fold/shirts/admin.php"
+			],
+			[
+				"contpag",
+				"within-the-fold/content-page.php"
+			],
+			[
+				"page.ph",
+				"within-the-fold/page.php"
+			],
+			[
+				"404",
+				"within-the-fold/404.php"
+			],
+			[
+				"autho",
+				"within-the-fold/author.php"
+			],
+			[
+				"confeatu",
+				"within-the-fold/content-featured-wf_shirt.php"
+			],
+			[
+				"contpage",
+				"within-the-fold/content-page.php"
+			],
+			[
+				"page",
+				"within-the-fold/page.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/haxeprojects/Tapestry/Tapestry.sublime-project"
+			],
+			[
+				"disc",
+				"~/haxeprojects/Discover/Discover.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

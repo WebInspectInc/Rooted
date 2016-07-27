@@ -12,12 +12,16 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 
 class PlayState extends FlxState
 {
+	private var _hud:HUD;
+
 	public var map:FlxTilemap;
 	public var player:Player;
 	public var enemies(default, null):FlxTypedGroup<Enemy>;
 	override public function create():Void
 	{
 		super.create();
+
+		_hud = new HUD();
 
 		player = new Player();
 		enemies = new FlxTypedGroup<Enemy>();
@@ -26,6 +30,8 @@ class PlayState extends FlxState
 
 		add(enemies);
 		add(player);
+
+		add(_hud);
 
 		FlxG.camera.follow(player, FlxCameraFollowStyle.PLATFORMER);
 		FlxG.camera.setScrollBoundsRect(0, 0, map.width, map.height, true);
