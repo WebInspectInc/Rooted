@@ -22,6 +22,8 @@ class Player extends FlxSprite {
 
 	private var invincibility:Int = 0;
 
+	public var rootDuration:Int = 100;
+	public var rootTime:Int = Reg.rootTime;
 	public var rooted:Bool = false;
 	public var direction:Int = 1;
 	public function new() {
@@ -87,6 +89,17 @@ class Player extends FlxSprite {
 			acceleration.y = 0;
 			if (FlxG.keys.pressed.DOWN) {
 				rooted = false;
+			}
+			if (rootTime > 0) {
+				rootTime--;
+				Reg.rootTime = rootTime;
+			} else {
+				rooted = false;
+			}
+		} else {
+			if (rootTime < 100) {
+				rootTime++;
+				Reg.rootTime = rootTime;
 			}
 		}
 
