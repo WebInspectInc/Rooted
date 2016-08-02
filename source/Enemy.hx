@@ -13,6 +13,8 @@ class Enemy extends FlxSprite {
 
 	private var _direction:Int = 1;
 	private var _appeared:Bool = false;
+	private var _deathCount:Int = 20;
+	private var _oppositeDirection:Int = 1;
 
 	public function new(x:Float, y:Float) {
 		super(x, y);
@@ -57,7 +59,14 @@ class Enemy extends FlxSprite {
 		FlxObject.separateY(this, player);
 
 		if (player.rooted) {
-			kill();
+			if (player.stationary) {
+				_oppositeDirection = (x > player.x) ? 1 : -1;
+
+				flipX = _oppositeDirection < 0;
+				_direction = _oppositeDirection;
+			} else {
+				kill();
+			}
 		} else {
 			player.hit();
 		}
