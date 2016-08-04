@@ -1,4 +1,4 @@
-package;
+package objects;
 
 import flixel.FlxSprite;
 import flixel.FlxG;
@@ -37,6 +37,7 @@ class Player extends FlxSprite {
 		animation.add("jump", [8]);
 		animation.add("fall", [9]);
 		animation.add("dead", [12]);
+		animation.add("hurt", []);
 		animation.add("rooted", [14]);
 
 		setSize(20, 28);
@@ -104,7 +105,6 @@ class Player extends FlxSprite {
 			} else {
 				stationary = false;
 			}
-			Reg.log = "" + stationary;
 		} else {
 			if (rootTime < 100) {
 				rootTime++;
@@ -155,6 +155,14 @@ class Player extends FlxSprite {
 
 		if (invincibility > 0) {
 			invincibility -= 1;
+
+			if (invincibility % 7 == 0) {
+				alpha = 0.2;
+			} else {
+				alpha = 1;
+			}
+		} else {
+			alpha = 1;
 		}
 
 		super.update(elapsed);

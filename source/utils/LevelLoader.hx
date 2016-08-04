@@ -1,4 +1,4 @@
-package;
+package utils;
 
 import flixel.addons.editors.tiled.TiledLayer;
 import flixel.addons.editors.tiled.TiledTileLayer;
@@ -7,6 +7,9 @@ import flixel.addons.editors.tiled.TiledObject;
 import flixel.addons.editors.tiled.TiledObjectLayer;
 import flixel.tile.FlxTilemap;
 import flixel.FlxG;
+import objects.Enemy;
+import objects.Player;
+import states.PlayState;
 
 
 class LevelLoader {

@@ -1,4 +1,4 @@
-package;
+package states;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -9,6 +9,10 @@ import flixel.math.FlxMath;
 import flixel.tile.FlxTilemap;
 import flixel.FlxCamera.FlxCameraFollowStyle;
 import flixel.group.FlxGroup.FlxTypedGroup;
+import states.HUD;
+import objects.Player;
+import objects.Enemy;
+import utils.LevelLoader;
 
 class PlayState extends FlxState
 {
