@@ -12,6 +12,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import states.HUD;
 import objects.Player;
 import objects.Enemy;
+import objects.Door;
 import utils.LevelLoader;
 
 class PlayState extends FlxState
@@ -21,6 +22,7 @@ class PlayState extends FlxState
 	public var map:FlxTilemap;
 	public var player:Player;
 	public var enemies(default, null):FlxTypedGroup<Enemy>;
+	public var doors(default, null):FlxTypedGroup<Door>;
 	override public function create():Void
 	{
 		super.create();
@@ -29,11 +31,13 @@ class PlayState extends FlxState
 
 		player = new Player();
 		enemies = new FlxTypedGroup<Enemy>();
+		doors = new FlxTypedGroup<Door>();
 
 		LevelLoader.load(this, 'main');
 
 		add(enemies);
 		add(player);
+		add(doors);
 
 		add(_hud);
 
@@ -45,6 +49,7 @@ class PlayState extends FlxState
 	{
 		FlxG.collide(map, player);
 		FlxG.overlap(enemies, player, collideEnemies);
+		FlxG.overlap(doors, player, collideDoors);
 
 		FlxG.collide(map, enemies);
 
@@ -53,5 +58,9 @@ class PlayState extends FlxState
 
 	function collideEnemies(enemy:Enemy, player:Player):Void {
 		enemy.interact(player);
+	}
+
+	function collideDoors(door:Door, player:Player):Void {
+		door.interact(player);
 	}
 }

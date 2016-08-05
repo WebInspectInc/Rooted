@@ -42,6 +42,8 @@ class Player extends FlxSprite {
 
 		setSize(20, 28);
 		offset.set(6, 4);
+		// setSize(32, 28);
+		// offset.set(0, 4);
 
 		health = startHealth;
 		drag.x = DRAG;

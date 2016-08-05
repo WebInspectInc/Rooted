@@ -9,6 +9,7 @@ import flixel.tile.FlxTilemap;
 import flixel.FlxG;
 import objects.Enemy;
 import objects.Player;
+import objects.Door;
 import states.PlayState;
 
 
@@ -43,6 +44,10 @@ class LevelLoader {
 		
 		var playerPos:TiledObject = getLevelObjects(tiledMap, "player")[0];
 		state.player.setPosition(playerPos.x, playerPos.y - TILE_SIZE);
+
+
+		for (door in getLevelObjects(tiledMap, "doors"))
+			state.doors.add(new Door(door));
 	}
 
 	public static function getLevelObjects(map:TiledMap, layer:String):Array<TiledObject> {
