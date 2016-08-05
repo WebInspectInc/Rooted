@@ -5,6 +5,7 @@ import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.util.FlxTimer;
 import flixel.addons.editors.tiled.TiledObject;
+import states.PlayState;
 
 class Door extends FlxSprite {
 	public var door:TiledObject;
@@ -17,9 +18,9 @@ class Door extends FlxSprite {
 		super.update(elapsed);
 	}
 
-	public function interact(player:Player) {
+	public function interact(player:Player, state:PlayState) {
 		var newLevel = door.properties.get('new_area');
 
-		Reg.log = newLevel;
+		state.playLevel('level1');
 	}
 }

@@ -26,14 +26,17 @@ class PlayState extends FlxState
 	override public function create():Void
 	{
 		super.create();
+		playLevel('main');
+	}
 
+	public function playLevel(levelName:String):Void {
 		_hud = new HUD();
 
 		player = new Player();
 		enemies = new FlxTypedGroup<Enemy>();
 		doors = new FlxTypedGroup<Door>();
 
-		LevelLoader.load(this, 'main');
+		LevelLoader.load(this, levelName);
 
 		add(enemies);
 		add(player);
@@ -61,6 +64,6 @@ class PlayState extends FlxState
 	}
 
 	function collideDoors(door:Door, player:Player):Void {
-		door.interact(player);
+		door.interact(player, this);
 	}
 }
