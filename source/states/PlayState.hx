@@ -50,6 +50,7 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float):Void
 	{
+		player.noRoot = false;
 		FlxG.collide(map, player);
 		FlxG.overlap(enemies, player, collideEnemies);
 		FlxG.overlap(doors, player, collideDoors);

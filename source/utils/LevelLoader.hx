@@ -6,6 +6,8 @@ import flixel.addons.editors.tiled.TiledMap;
 import flixel.addons.editors.tiled.TiledObject;
 import flixel.addons.editors.tiled.TiledObjectLayer;
 import flixel.tile.FlxTilemap;
+import flixel.tile.FlxTile;
+import flixel.FlxObject;
 import flixel.FlxG;
 import objects.Enemy;
 import objects.Player;
@@ -14,8 +16,10 @@ import states.PlayState;
 
 
 class LevelLoader {
+	public static var levelState:PlayState;
 	private static inline var TILE_SIZE:Int = 32;
 	public static function load(state:PlayState, level:String) {
+		levelState = state;
 		var tiledMap = new TiledMap("assets/data/" + level + ".tmx");
 		var mainLayer:TiledTileLayer = cast tiledMap.getLayer("foreground");
 
@@ -25,6 +29,8 @@ class LevelLoader {
 			tiledMap.height,
 			AssetPaths.tinytiles__png,
 			TILE_SIZE, TILE_SIZE, 1);
+
+		state.map.setTileProperties(2, FlxObject.ANY, collideStone, Player, 10);
 
 		var backLayer:TiledTileLayer = cast tiledMap.getLayer("background");
 
@@ -48,6 +54,11 @@ class LevelLoader {
 
 		for (door in getLevelObjects(tiledMap, "doors"))
 			state.doors.add(new Door(door));
+	}
+
+	private static function collideStone(Tile:FlxObject, Player:FlxObject):Void {
+		//Player.noRoot = true;
+		levelState.player.noRoot = true;
 	}
 
 	public static function getLevelObjects(map:TiledMap, layer:String):Array<TiledObject> {

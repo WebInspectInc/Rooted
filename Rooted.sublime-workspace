@@ -152,51 +152,67 @@
 	"buffers":
 	[
 		{
-			"file": "source/LevelLoader.hx",
-			"settings":
-			{
-				"buffer_size": 1649,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "source/Reg.hx",
 			"settings":
 			{
-				"buffer_size": 167,
+				"buffer_size": 197,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/HUD.hx",
+			"file": "source/utils/LevelLoader.hx",
 			"settings":
 			{
-				"buffer_size": 803,
+				"buffer_size": 1835,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/PlayState.hx",
+			"file": "source/objects/Door.hx",
 			"settings":
 			{
-				"buffer_size": 1109,
+				"buffer_size": 566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
+			"settings":
+			{
+				"buffer_size": 4080,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "source/Enemy.hx",
+			"file": "source/objects/Player.hx",
 			"settings":
 			{
-				"buffer_size": 1271,
+				"buffer_size": 3776,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/Player.hx",
+			"file": "source/states/PlayState.hx",
 			"settings":
 			{
-				"buffer_size": 3380,
+				"buffer_size": 1547,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "source/objects/Enemy.hx",
+			"settings":
+			{
+				"buffer_size": 1525,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+			"settings":
+			{
+				"buffer_size": 40810,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -325,15 +341,27 @@
 		"/Users/howlermiller/haxeprojects/Rooted",
 		"/Users/howlermiller/haxeprojects/Rooted/assets",
 		"/Users/howlermiller/haxeprojects/Rooted/assets/images",
-		"/Users/howlermiller/haxeprojects/Rooted/source"
+		"/Users/howlermiller/haxeprojects/Rooted/source",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states"
 	],
 	"file_history":
 	[
-		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxObject.hx",
+		"/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledPropertySet.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states/MenuState.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/objects/Enemy.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/utils/LevelLoader.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/util/LevelLoader.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Main.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/Player.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/Enemy.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states/PlayState.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/PlayState.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/HUD.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states/HUD.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/LevelLoader.hx",
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxObject.hx",
 		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Platforms.hx",
-		"/Users/howlermiller/haxeprojects/Rooted/source/Player.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/.gitignore",
 		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/.gitignore",
 		"/Users/howlermiller/haxeprojects/Rooted/.git/config",
@@ -445,18 +473,7 @@
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/admin.php",
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/within-the-fold.php",
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/shirt-functions.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_product_page.js",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/connect_form.phtml",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/shortcode_connect.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/ajax.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/content-featured-wf_shirt.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/phtml/successful-shirts.phtml",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/phtml/view-addresses.phtml",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/public/includes/misc-functions.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_admin.js",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/wf-menu.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/stripe/includes/shortcodes.php",
-		"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe/public/includes/misc-functions.php"
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_product_page.js"
 	],
 	"find":
 	{
@@ -505,6 +522,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Float",
+			"invincib",
+			"invinci",
+			"health",
+			"_rootTime",
+			"direc",
+			"flip",
 			"health",
 			"life",
 			"health",
@@ -625,14 +649,7 @@
 			"overlay__hidden",
 			"open_overlay",
 			"payment-overlay",
-			"200px",
-			"image_ids",
-			"featured images",
-			"max-width",
-			"is_black",
-			"featured__info",
-			":after",
-			"after"
+			"200px"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -655,71 +672,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "source/LevelLoader.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1153,
-								1153
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 61,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 367.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "source/Reg.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								158,
-								158
+								194,
+								194
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 103,
-								"count": 19,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
@@ -727,71 +696,62 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "source/HUD.hx",
+					"buffer": 1,
+					"file": "source/utils/LevelLoader.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 803,
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								521,
-								521
+								1512,
+								1512
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 9,
-								"count": 38,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 178.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "source/PlayState.hx",
+					"buffer": 2,
+					"file": "source/objects/Door.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1109,
+						"buffer_size": 566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1103,
-								1103
+								342,
+								342
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 65,
-								"count": 44,
+								"changes": 0,
+								"count": 25,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -805,85 +765,157 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1272
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "source/Enemy.hx",
+					"file": "source/objects/Player.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1271,
+						"buffer_size": 3776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1245,
-								1245
+								1454,
+								1454
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 73,
-								"count": 85,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 971.0,
+						"translation.y": 130.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "source/Player.hx",
+					"file": "source/states/PlayState.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3380,
+						"buffer_size": 1547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2767,
-								2767
+								1539,
+								1539
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 650,
-								"count": 203,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2272.0,
+						"translation.y": 1036.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "source/objects/Enemy.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1263,
+								1263
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2083.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -942,6 +974,22 @@
 		"selected_items":
 		[
 			[
+				"enemy",
+				"Rooted/source/objects/Enemy.hx"
+			],
+			[
+				"enem",
+				"Rooted/source/objects/Enemy.hx"
+			],
+			[
+				"levell",
+				"Rooted/source/utils/LevelLoader.hx"
+			],
+			[
+				"playst",
+				"Rooted/source/states/PlayState.hx"
+			],
+			[
 				"hud",
 				"Rooted/source/HUD.hx"
 			],
@@ -952,10 +1000,6 @@
 			[
 				"main",
 				"Rooted/source/Main.hx"
-			],
-			[
-				"playst",
-				"Rooted/source/PlayState.hx"
 			],
 			[
 				"playsta",
@@ -1440,18 +1484,6 @@
 			[
 				"404",
 				"within-the-fold/404.php"
-			],
-			[
-				"autho",
-				"within-the-fold/author.php"
-			],
-			[
-				"confeatu",
-				"within-the-fold/content-featured-wf_shirt.php"
-			],
-			[
-				"contpage",
-				"within-the-fold/content-page.php"
 			]
 		],
 		"width": 0.0
@@ -1464,7 +1496,7 @@
 		[
 			[
 				"",
-				"~/haxeprojects/Discover/Discover.sublime-project"
+				"~/Documents/sublime/doubtful.sublime-project"
 			],
 			[
 				"disc",

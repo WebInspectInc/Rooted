@@ -25,6 +25,7 @@ class Player extends FlxSprite {
 	public var rootDuration:Int = 100;
 	public var rootTime:Int = Reg.rootTime;
 	public var rooted:Bool = false;
+	public var noRoot = false;
 	public var direction:Int = 1;
 	public var stationary:Bool = false;
 	public function new() {
@@ -129,7 +130,9 @@ class Player extends FlxSprite {
 	}
 
 	private function rootCharacter() {
-		rooted = true;
+		if (!noRoot) {
+			rooted = true;
+		}
 	}
 
 	private function animate() {
