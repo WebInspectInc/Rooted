@@ -122,7 +122,8 @@ class Player extends FlxSprite {
 	public function hit() {
 		if (invincibility <= 0) {
 			hurt(10);
-			velocity.y = -velocity.y * 2;
+			// velocity.y = -velocity.y * 2;
+			velocity.y = JUMP_FORCE / 2;
 			velocity.x = -velocity.x * 2;
 			Reg.health -= 10;
 			invincibility = 200;
