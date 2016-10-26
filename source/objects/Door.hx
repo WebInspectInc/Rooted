@@ -25,6 +25,6 @@ class Door extends FlxSprite {
 	public function interact(player:Player, state:PlayState) {
 		var newLevel = door.properties.get('new_area');
 
-		state.playLevel('level1');
+		state.playLevel(newLevel);
 	}
 }

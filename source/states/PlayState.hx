@@ -23,6 +23,8 @@ class PlayState extends FlxState
 	public var player:Player;
 	public var enemies(default, null):FlxTypedGroup<Enemy>;
 	public var doors(default, null):FlxTypedGroup<Door>;
+
+	public var currentLevel:String;
 	override public function create():Void
 	{
 		super.create();
@@ -37,6 +39,7 @@ class PlayState extends FlxState
 		doors = new FlxTypedGroup<Door>();
 
 		LevelLoader.load(this, levelName);
+		currentLevel = levelName;
 
 		add(enemies);
 		add(player);
@@ -56,6 +59,10 @@ class PlayState extends FlxState
 		FlxG.overlap(doors, player, collideDoors);
 
 		FlxG.collide(map, enemies);
+
+		if (player.alive == false) {
+			playLevel(currentLevel);
+		}
 
 		super.update(elapsed);
 	}

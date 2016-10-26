@@ -17,9 +17,11 @@ import states.PlayState;
 
 class LevelLoader {
 	public static var levelState:PlayState;
+	public static var levelName:String;
 	private static inline var TILE_SIZE:Int = 32;
 	public static function load(state:PlayState, level:String) {
 		levelState = state;
+		levelName = level;
 		var tiledMap = new TiledMap("assets/data/" + level + ".tmx");
 		var mainLayer:TiledTileLayer = cast tiledMap.getLayer("foreground");
 
