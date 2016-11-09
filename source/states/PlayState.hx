@@ -72,7 +72,9 @@ class PlayState extends FlxState
 		FlxG.collide(map, enemies);
 
 		if (player.alive == false) {
-			playLevel(currentLevel);
+			//playLevel(currentLevel);
+			FlxG.resetState();
+			Reg.health = 30;
 		}
 
 		super.update(elapsed);

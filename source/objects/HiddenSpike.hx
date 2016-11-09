@@ -20,7 +20,9 @@ class HiddenSpike extends FlxSprite {
 		animation.add("attack", [228], 12);
 		animation.play("hidden");
 
-		maxVelocity.set(0, 0);
+		immovable = true;
+		moves = false;
+		allowCollisions = FlxObject.WALL;
 	}
 
 	override public function update(elapsed:Float) {

@@ -38,8 +38,8 @@ class Player extends FlxSprite {
 		animation.add("skid", [100]);
 		animation.add("jump", [123]);
 		animation.add("fall", [126]);
-		animation.add("dead", [147]);
-		animation.add("hurt", []);
+		animation.add("dead", [146]);
+		animation.add("hurt", [146]);
 		animation.add("rooted", [128]);
 
 		setSize(24, 30);
