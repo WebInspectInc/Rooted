@@ -116,6 +116,8 @@ class Player extends FlxSprite {
 
 		if (x < 0)
 			x = 0;
+
+		Reg.playerX = x;
 	}
 
 	public function hit() {

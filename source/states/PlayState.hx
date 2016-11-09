@@ -14,6 +14,7 @@ import objects.Player;
 import objects.Enemy;
 import objects.Door;
 import objects.HiddenSpike;
+import objects.FallingBlock;
 import utils.LevelLoader;
 
 class PlayState extends FlxState
@@ -24,6 +25,8 @@ class PlayState extends FlxState
 	public var player:Player;
 	public var enemies(default, null):FlxTypedGroup<Enemy>;
 	public var spikes(default, null):FlxTypedGroup<HiddenSpike>;
+	public var blocks(default, null):FlxTypedGroup<FallingBlock>;
+	public var fallingBlocks(default, null):FlxTypedGroup<FallingBlock>;
 	public var doors(default, null):FlxTypedGroup<Door>;
 
 	public var currentLevel:String;
@@ -40,12 +43,14 @@ class PlayState extends FlxState
 		enemies = new FlxTypedGroup<Enemy>();
 		doors = new FlxTypedGroup<Door>();
 		spikes = new FlxTypedGroup<HiddenSpike>();
+		blocks = new FlxTypedGroup<FallingBlock>();
 
 		LevelLoader.load(this, levelName);
 		currentLevel = levelName;
 
 		add(enemies);
 		add(spikes);
+		add(blocks);
 		add(player);
 		add(doors);
 
@@ -62,6 +67,7 @@ class PlayState extends FlxState
 		FlxG.overlap(enemies, player, collideEnemies);
 		FlxG.overlap(doors, player, collideDoors);
 		FlxG.overlap(spikes, player, collideSpikes);
+		FlxG.overlap(blocks, player, collideBlock);
 
 		FlxG.collide(map, enemies);
 
@@ -82,5 +88,9 @@ class PlayState extends FlxState
 
 	function collideSpikes(spike:HiddenSpike, player:Player):Void {
 		spike.interact(player);
+	}
+
+	function collideBlock(block:FallingBlock, player:Player):Void {
+		block.interact(player);
 	}
 }

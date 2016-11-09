@@ -19,6 +19,8 @@ class HiddenSpike extends FlxSprite {
 		animation.add("hidden", [248], 12);
 		animation.add("attack", [228], 12);
 		animation.play("hidden");
+
+		maxVelocity.set(0, 0);
 	}
 
 	override public function update(elapsed:Float) {

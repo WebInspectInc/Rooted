@@ -13,6 +13,7 @@ import objects.Enemy;
 import objects.Player;
 import objects.Door;
 import objects.HiddenSpike;
+import objects.FallingBlock;
 import states.PlayState;
 
 
@@ -54,6 +55,9 @@ class LevelLoader {
 
 		for (spike in getLevelObjects(tiledMap, "hidden_spikes"))
 			state.spikes.add(new HiddenSpike(spike.x, spike.y - 32));
+
+		for (block in getLevelObjects(tiledMap, "falling_blocks"))
+			state.blocks.add(new FallingBlock(block.x, block.y - 32));
 		
 		var playerPos:TiledObject = getLevelObjects(tiledMap, "player")[0];
 		state.player.setPosition(playerPos.x, playerPos.y - TILE_SIZE);
