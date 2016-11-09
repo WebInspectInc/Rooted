@@ -13,6 +13,7 @@ import states.HUD;
 import objects.Player;
 import objects.Enemy;
 import objects.Door;
+import objects.HiddenSpike;
 import utils.LevelLoader;
 
 class PlayState extends FlxState
@@ -22,6 +23,7 @@ class PlayState extends FlxState
 	public var map:FlxTilemap;
 	public var player:Player;
 	public var enemies(default, null):FlxTypedGroup<Enemy>;
+	public var spikes(default, null):FlxTypedGroup<HiddenSpike>;
 	public var doors(default, null):FlxTypedGroup<Door>;
 
 	public var currentLevel:String;
@@ -37,11 +39,13 @@ class PlayState extends FlxState
 		player = new Player();
 		enemies = new FlxTypedGroup<Enemy>();
 		doors = new FlxTypedGroup<Door>();
+		spikes = new FlxTypedGroup<HiddenSpike>();
 
 		LevelLoader.load(this, levelName);
 		currentLevel = levelName;
 
 		add(enemies);
+		add(spikes);
 		add(player);
 		add(doors);
 
@@ -57,6 +61,7 @@ class PlayState extends FlxState
 		FlxG.collide(map, player);
 		FlxG.overlap(enemies, player, collideEnemies);
 		FlxG.overlap(doors, player, collideDoors);
+		FlxG.overlap(spikes, player, collideSpikes);
 
 		FlxG.collide(map, enemies);
 
@@ -73,5 +78,9 @@ class PlayState extends FlxState
 
 	function collideDoors(door:Door, player:Player):Void {
 		door.interact(player, this);
+	}
+
+	function collideSpikes(spike:HiddenSpike, player:Player):Void {
+		spike.interact(player);
 	}
 }

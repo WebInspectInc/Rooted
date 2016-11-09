@@ -16,8 +16,8 @@ class Player extends FlxSprite {
 	private static inline var WALK_SPEED:Int = 140;
 	private static inline var RUN_SPEED:Int = 180;
 	private static inline var FALLING_SPEED:Int = 300;
-	private static inline var SPRITE_SIZE:Int = 32;
-	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.tinycharacter__png;
+	private static inline var SPRITE_SIZE:Int = 64;
+	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime__png;
 
 	private var startHealth:Float = Reg.health;
 	private var invincibility:Int = 0;
@@ -32,19 +32,18 @@ class Player extends FlxSprite {
 		super();
 		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE, SPRITE_SIZE);
 
-		animation.add("idle", [0]);
-		animation.add("walk", [1, 2, 3], 12);
-		animation.add("skid", [0]);
-		animation.add("jump", [8]);
-		animation.add("fall", [9]);
-		animation.add("dead", [12]);
-		animation.add("hurt", []);
-		animation.add("rooted", [14]);
 
-		setSize(20, 28);
-		offset.set(6, 4);
-		// setSize(32, 28);
-		// offset.set(0, 4);
+		animation.add("idle", [100]);
+		animation.add("walk", [101,102], 12);
+		animation.add("skid", [100]);
+		animation.add("jump", [123]);
+		animation.add("fall", [126]);
+		animation.add("dead", [147]);
+		animation.add("hurt", []);
+		animation.add("rooted", [128]);
+
+		setSize(24, 30);
+		offset.set(20, 34);
 
 		health = startHealth;
 		drag.x = DRAG;
@@ -57,11 +56,11 @@ class Player extends FlxSprite {
 		acceleration.y = GRAVITY;
 
 		if (FlxG.keys.pressed.LEFT && !rooted) {
-			flipX = true;
+			flipX = false;
 			direction = -1;
 			acceleration.x -= ACCELERATION;
 		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
-			flipX = false;
+			flipX = true;
 			direction = 1;
 			acceleration.x += ACCELERATION;
 		}
