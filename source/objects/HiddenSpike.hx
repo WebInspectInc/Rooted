@@ -16,8 +16,9 @@ class HiddenSpike extends FlxSprite {
 		super(x, y);
 
 		loadGraphic(AssetPaths.tinytiles__png, true, 32, 32);
-		animation.add("hidden", [248], 12);
-		animation.add("attack", [228], 12);
+		animation.add("hidden", [0]);
+		animation.add("premeditate", [248]);
+		animation.add("attack", [228]);
 		animation.play("hidden");
 
 		immovable = true;
@@ -27,6 +28,7 @@ class HiddenSpike extends FlxSprite {
 
 	override public function update(elapsed:Float) {
 		if (_playerTouched) {
+			animation.play("premeditate");
 			if (_countdown > 0) {
 				_countdown -= 1;
 			} else {

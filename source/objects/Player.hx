@@ -9,12 +9,13 @@ import flixel.FlxObject;
 import flixel.math.FlxMath;
 
 class Player extends FlxSprite {
-	private static inline var ACCELERATION:Int = 420;
-	private static inline var DRAG:Int = 220;
+	private static inline var ACCELERATION:Int = 40;
+	private static inline var VELOCITY:Int = 100;
+	private static inline var DRAG:Int = 520;
 	private static inline var GRAVITY:Int = 600;
 	private static inline var JUMP_FORCE:Int = -280;
 	private static inline var WALK_SPEED:Int = 140;
-	private static inline var RUN_SPEED:Int = 180;
+	private static inline var ROOT_SPEED:Int = 300;
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 64;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime__png;
@@ -58,11 +59,15 @@ class Player extends FlxSprite {
 		if (FlxG.keys.pressed.LEFT && !rooted) {
 			flipX = false;
 			direction = -1;
+			velocity.x -= VELOCITY - ACCELERATION;
 			acceleration.x -= ACCELERATION;
 		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
 			flipX = true;
 			direction = 1;
+			velocity.x += VELOCITY - ACCELERATION;
 			acceleration.x += ACCELERATION;
+		} else if (!rooted) {
+			//acceleration.x -= ACCELERATION * direction;
 		}
 
 		if (velocity.y == 0) {
@@ -72,7 +77,7 @@ class Player extends FlxSprite {
 			}
 
 			if (FlxG.keys.pressed.X) {
-				maxVelocity.x = RUN_SPEED;
+				maxVelocity.x = ROOT_SPEED;
 			} else {
 				maxVelocity.x = WALK_SPEED;
 			}
