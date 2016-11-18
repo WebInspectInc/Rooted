@@ -11,11 +11,11 @@ import flixel.math.FlxMath;
 class Player extends FlxSprite {
 	private static inline var ACCELERATION:Int = 40;
 	private static inline var VELOCITY:Int = 100;
-	private static inline var DRAG:Int = 520;
+	private static inline var DRAG:Int = 420;
 	private static inline var GRAVITY:Int = 600;
 	private static inline var JUMP_FORCE:Int = -280;
 	private static inline var WALK_SPEED:Int = 140;
-	private static inline var ROOT_SPEED:Int = 300;
+	private static inline var ROOT_SPEED:Int = 200;
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 64;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime__png;

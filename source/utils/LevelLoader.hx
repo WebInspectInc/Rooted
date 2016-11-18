@@ -67,13 +67,17 @@ class LevelLoader {
 			state.doors.add(new Door(door));
 	}
 
-	private static function collideStone(Tile:FlxObject, Player:FlxObject):Void {
+	private static function collideStone(tile:FlxObject, player:FlxObject):Void {
 		//Player.noRoot = true;
 		levelState.player.noRoot = true;
 	}
 
-	private static function collideSpikes(Tile:FlxObject, Player:FlxObject):Void {
-		levelState.player.hit();
+	private static function collideSpikes(tile:FlxObject, player:FlxObject):Void {
+		// complicated logic to try and make spikes a little more fair
+		if ((player.x + player.width > tile.x + tile.width && player.x + 20 < tile.x + tile.width) ||
+			(player.x < tile.x && player.x + 4 > tile.x)) {
+			levelState.player.hit();
+		}
 	}
 
 	public static function getLevelObjects(map:TiledMap, layer:String):Array<TiledObject> {
