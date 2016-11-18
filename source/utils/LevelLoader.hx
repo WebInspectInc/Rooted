@@ -36,6 +36,7 @@ class LevelLoader {
 
 		state.map.setTileProperties(2, FlxObject.ANY, collideStone, Player, 10);
 		state.map.setTileProperties(74, FlxObject.ANY, collideSpikes, Player, 3);
+		state.map.setTileProperties(220, FlxObject.NONE, collideLowCeiling, Player);
 
 		var backLayer:TiledTileLayer = cast tiledMap.getLayer("background");
 
@@ -78,6 +79,10 @@ class LevelLoader {
 			(player.x < tile.x && player.x + 4 > tile.x)) {
 			levelState.player.hit();
 		}
+	}
+
+	private static function collideLowCeiling(tile:FlxObject, player:FlxObject):Void {
+		tile.solid = !(cast player).rooted;
 	}
 
 	public static function getLevelObjects(map:TiledMap, layer:String):Array<TiledObject> {
