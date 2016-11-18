@@ -17,8 +17,8 @@ class Player extends FlxSprite {
 	private static inline var WALK_SPEED:Int = 140;
 	private static inline var ROOT_SPEED:Int = 200;
 	private static inline var FALLING_SPEED:Int = 300;
-	private static inline var SPRITE_SIZE:Int = 64;
-	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime__png;
+	private static inline var SPRITE_SIZE:Int = 70;
+	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime1__png;
 
 	private var startHealth:Float = Reg.health;
 	private var invincibility:Int = 0;
@@ -26,6 +26,7 @@ class Player extends FlxSprite {
 	public var rootDuration:Int = 100;
 	public var rootTime:Int = Reg.rootTime;
 	public var rooted:Bool = false;
+	public var wallJumping:Bool = false;
 	public var noRoot = false;
 	public var direction:Int = 1;
 	public var stationary:Bool = false;
@@ -34,17 +35,19 @@ class Player extends FlxSprite {
 		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE, SPRITE_SIZE);
 
 
-		animation.add("idle", [100]);
-		animation.add("walk", [101,102], 12);
-		animation.add("skid", [100]);
-		animation.add("jump", [123]);
-		animation.add("fall", [126]);
-		animation.add("dead", [146]);
-		animation.add("hurt", [146]);
-		animation.add("rooted", [128]);
+		animation.add("idle", [0]);
+		animation.add("walk", [1,2,3,4,5,0], 12);
+		animation.add("skid", [30,31]);
+		animation.add("jump", [21]);
+		animation.add("fall", [26]);
+		animation.add("dead", [1]);
+		animation.add("hurt", [1]);
+		animation.add("rooted", [31]);
+		animation.add("wall", [10]);
 
-		setSize(24, 30);
+		setSize(28, 16);
 		offset.set(20, 34);
+		scale.set(0.5, 0.5);
 
 		health = startHealth;
 		drag.x = DRAG;
@@ -57,12 +60,12 @@ class Player extends FlxSprite {
 		acceleration.y = GRAVITY;
 
 		if (FlxG.keys.pressed.LEFT && !rooted) {
-			flipX = false;
+			flipX = true;
 			direction = -1;
 			velocity.x -= VELOCITY - ACCELERATION;
 			acceleration.x -= ACCELERATION;
 		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
-			flipX = true;
+			flipX = false;
 			direction = 1;
 			velocity.x += VELOCITY - ACCELERATION;
 			acceleration.x += ACCELERATION;
@@ -88,6 +91,9 @@ class Player extends FlxSprite {
 			velocity.y = velocity.y * 0.5;
 		}
 
+		if (FlxG.keys.pressed.X && isTouching(FlxObject.WALL)) {
+			rootCharacter(FlxObject.WALL);
+		}
 		if (FlxG.keys.pressed.X && isTouching(FlxObject.ANY)) {
 			rootCharacter();
 		}
@@ -113,6 +119,7 @@ class Player extends FlxSprite {
 				stationary = false;
 			}
 		} else {
+			wallJumping = false;
 			if (rootTime < 100) {
 				rootTime++;
 				Reg.rootTime = rootTime;
@@ -136,9 +143,12 @@ class Player extends FlxSprite {
 		}
 	}
 
-	private function rootCharacter() {
+	private function rootCharacter(wall:Int = 0) {
 		if (!noRoot) {
 			rooted = true;
+		}
+		if (wall == FlxObject.WALL) {
+			wallJumping = true;
 		}
 	}
 
@@ -157,7 +167,11 @@ class Player extends FlxSprite {
 			}
 		}
 		if (rooted) {
-			animation.play("rooted");
+			if (wallJumping) {
+				animation.play("wall");
+			} else {
+				animation.play("rooted");
+			}
 		}
 	}
 

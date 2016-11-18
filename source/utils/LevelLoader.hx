@@ -51,13 +51,13 @@ class LevelLoader {
 		state.add(state.map);
 
 		for (enemy in getLevelObjects(tiledMap, "enemies"))
-			state.enemies.add(new Enemy(enemy.x, enemy.y - 32));
+			state.enemies.add(new Enemy(enemy.x, enemy.y - TILE_SIZE));
 
 		for (spike in getLevelObjects(tiledMap, "hidden_spikes"))
-			state.spikes.add(new HiddenSpike(spike.x, spike.y - 32));
+			state.spikes.add(new HiddenSpike(spike.x, spike.y - TILE_SIZE));
 
 		for (block in getLevelObjects(tiledMap, "falling_blocks"))
-			state.blocks.add(new FallingBlock(block.x, block.y - 32));
+			state.blocks.add(new FallingBlock(block.x, block.y - TILE_SIZE));
 		
 		var playerPos:TiledObject = getLevelObjects(tiledMap, "player")[0];
 		state.player.setPosition(playerPos.x, playerPos.y - TILE_SIZE);

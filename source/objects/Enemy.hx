@@ -41,6 +41,13 @@ class Enemy extends FlxSprite {
 
 			if (justTouched(FlxObject.WALL))
 				flipDirection();
+
+			// if (overlapsAt(x + _direction * width, y + 1, (FlxG.state as PlayState).map.getLayer("foreground"))) {
+			// 	// we'll still be on the floor in one width's time; keep walking
+			// } else {
+			// 	// we'll fall off in a width's time; turn around
+			// 	setFacing(facing == LEFT ? RIGHT : LEFT);
+			// }
 		}
 
 		super.update(elapsed);

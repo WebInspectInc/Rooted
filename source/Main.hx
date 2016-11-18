@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxGame;
+import flixel.FlxG;
 import states.PlayState;
 import openfl.display.Sprite;
 
@@ -10,5 +11,7 @@ class Main extends Sprite
 	{
 		super();
 		addChild(new FlxGame(640, 480, PlayState));
+		// FlxG.mouse.visible = false;
+		// FlxG.timeScale = 0.5;
 	}
 }
