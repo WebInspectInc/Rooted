@@ -15,6 +15,7 @@ import objects.Door;
 import objects.HiddenSpike;
 import objects.FallingBlock;
 import states.PlayState;
+import flixel.system.debug.watch.Tracker;
 
 
 class LevelLoader {
@@ -36,7 +37,14 @@ class LevelLoader {
 
 		state.map.setTileProperties(2, FlxObject.ANY, collideStone, Player, 10);
 		state.map.setTileProperties(74, FlxObject.ANY, collideSpikes, Player, 3);
-		state.map.setTileProperties(220, FlxObject.NONE, collideLowCeiling, Player);
+		state.map.setTileProperties(220, FlxObject.WALL, collideLowCeiling, Player);
+
+		//var partialWall = new FlxTile(state.map, 220, TILE_SIZE, 0.5, true, FlxObject.WALL);
+
+		// var partialWalls = state.map.getTileCoords(220, false);
+		// for (wall in partialWalls) {
+		// 	var sprite = state.map.tileToSprite(Std.int(wall.x / TILE_SIZE), Std.int(wall.y / TILE_SIZE), -1, FlxTileProperties);
+		// }
 
 		var backLayer:TiledTileLayer = cast tiledMap.getLayer("background");
 
@@ -82,7 +90,13 @@ class LevelLoader {
 	}
 
 	private static function collideLowCeiling(tile:FlxObject, player:FlxObject):Void {
-		tile.solid = !(cast player).rooted;
+		//tile.solid = !(cast player).rooted;
+		tile.solid = false;
+		// if ((cast player).rooted) {
+		// 	tile.height = TILE_SIZE / 3;
+		// } else {
+		// 	tile.height = TILE_SIZE;
+		// }
 	}
 
 	public static function getLevelObjects(map:TiledMap, layer:String):Array<TiledObject> {

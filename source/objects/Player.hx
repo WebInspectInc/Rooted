@@ -7,6 +7,7 @@ import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.util.FlxColor;
 import flixel.FlxObject;
 import flixel.math.FlxMath;
+import flixel.system.debug.watch.Tracker;
 
 class Player extends FlxSprite {
 	private static inline var ACCELERATION:Int = 40;
@@ -45,7 +46,7 @@ class Player extends FlxSprite {
 		animation.add("rooted", [31]);
 		animation.add("wall", [10]);
 
-		setSize(28, 16);
+		setSize(28, 15);
 		offset.set(20, 34);
 		scale.set(0.5, 0.5);
 
@@ -53,6 +54,9 @@ class Player extends FlxSprite {
 		drag.x = DRAG;
 		acceleration.y = GRAVITY;
 		maxVelocity.set(WALK_SPEED, FALLING_SPEED);
+
+		FlxG.debugger.addTrackerProfile(new TrackerProfile(Player, ['rooted', 'rootTime', 'direction', 'velocity'], []));
+		FlxG.debugger.track(this, "player");
 	}
 
 	private function move() {
