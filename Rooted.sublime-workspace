@@ -5,15 +5,15 @@
 		[
 			[
 				"root",
-				"rootTime	Int"
+				"rootTime\tInt"
 			],
 			[
 				"FlxCam",
-				"FlxCameraFollowStyle	class"
+				"FlxCameraFollowStyle\tclass"
 			],
 			[
 				"ti",
-				"tiled	package"
+				"tiled\tpackage"
 			],
 			[
 				"til",
@@ -37,7 +37,7 @@
 			],
 			[
 				"for",
-				"for	for (…) {…}"
+				"for\tfor (…) {…}"
 			],
 			[
 				"save",
@@ -77,7 +77,7 @@
 			],
 			[
 				"fs",
-				"fs	font-style: ${italic};"
+				"fs\tfont-style: ${italic};"
 			],
 			[
 				"over",
@@ -155,7 +155,7 @@
 			"file": "source/Reg.hx",
 			"settings":
 			{
-				"buffer_size": 197,
+				"buffer_size": 235,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,7 +163,7 @@
 			"file": "source/utils/LevelLoader.hx",
 			"settings":
 			{
-				"buffer_size": 1835,
+				"buffer_size": 3665,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,23 +171,16 @@
 			"file": "source/objects/Door.hx",
 			"settings":
 			{
-				"buffer_size": 566,
+				"buffer_size": 694,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
-			"settings":
-			{
-				"buffer_size": 4080,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "source/objects/Player.hx",
 			"settings":
 			{
-				"buffer_size": 3776,
+				"buffer_size": 4597,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -195,7 +188,7 @@
 			"file": "source/states/PlayState.hx",
 			"settings":
 			{
-				"buffer_size": 1547,
+				"buffer_size": 2368,
 				"line_ending": "Windows"
 			}
 		},
@@ -203,16 +196,8 @@
 			"file": "source/objects/Enemy.hx",
 			"settings":
 			{
-				"buffer_size": 1525,
+				"buffer_size": 1835,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
-			"settings":
-			{
-				"buffer_size": 40810,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -224,9 +209,13 @@
 	"command_palette":
 	{
 		"height": 67.0,
-		"last_filter": "newclas",
+		"last_filter": "buildtar",
 		"selected_items":
 		[
+			[
+				"buildtar",
+				"Haxe: Choose Build Target"
+			],
 			[
 				"newclas",
 				"Haxe: New Class"
@@ -346,6 +335,8 @@
 	],
 	"file_history":
 	[
+		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
+		"/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
 		"/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledPropertySet.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/states/MenuState.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/objects/Enemy.hx",
@@ -360,7 +351,6 @@
 		"/Users/howlermiller/haxeprojects/Rooted/source/states/HUD.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/LevelLoader.hx",
 		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxObject.hx",
-		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Platforms.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/.gitignore",
 		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/.gitignore",
@@ -472,8 +462,7 @@
 		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/shirts/ajax.php",
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/admin.php",
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/within-the-fold.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/shirt-functions.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/js/shirts_product_page.js"
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/shirt-functions.php"
 	],
 	"find":
 	{
@@ -589,9 +578,9 @@
 			"<div class=\"span-1-2\">",
 			"48",
 			"\"",
-			"	",
+			"\t",
 			"no_charge",
-			"		",
+			"\t\t",
 			"no_charge",
 			"chapter_01",
 			"h2",
@@ -667,7 +656,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -676,15 +665,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 197,
+						"buffer_size": 235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								194,
-								194
+								0,
+								0
 							]
 						],
 						"settings":
@@ -696,7 +685,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -705,19 +694,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1835,
+						"buffer_size": 3665,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1512,
-								1512
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 150,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
@@ -726,7 +724,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -735,15 +733,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 566,
+						"buffer_size": 694,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								342,
-								342
+								379,
+								379
 							]
 						],
 						"settings":
@@ -765,84 +763,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4080,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1256,
-								1272
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "source/objects/Player.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3776,
+						"buffer_size": 4597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1454,
-								1454
+								3090,
+								3090
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 2,
+								"count": 265,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 130.0,
+						"translation.y": 2244.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "source/states/PlayState.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1547,
+						"buffer_size": 2368,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1539,
-								1539
+								0,
+								0
 							]
 						],
 						"settings":
@@ -859,20 +836,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "source/objects/Enemy.hx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1525,
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1100,
-								1100
+								0,
+								0
 							]
 						],
 						"settings":
@@ -885,37 +862,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 40810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1263,
-								1263
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2083.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1496,7 +1443,7 @@
 		[
 			[
 				"",
-				"~/Documents/sublime/doubtful.sublime-project"
+				"~/haxeprojects/CameraTut/CameraTut.sublime-project"
 			],
 			[
 				"disc",

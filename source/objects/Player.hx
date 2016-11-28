@@ -7,7 +7,9 @@ import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.util.FlxColor;
 import flixel.FlxObject;
 import flixel.math.FlxMath;
+import flixel.math.FlxRect;
 import flixel.system.debug.watch.Tracker;
+import flixel.system.FlxSound;
 
 class Player extends FlxSprite {
 	private static inline var ACCELERATION:Int = 40;
@@ -20,6 +22,8 @@ class Player extends FlxSprite {
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 70;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime1__png;
+
+	private var slideSound:FlxSound;
 
 	private var startHealth:Float = Reg.health;
 	private var invincibility:Int = 0;
@@ -35,6 +39,7 @@ class Player extends FlxSprite {
 		super();
 		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE, SPRITE_SIZE);
 
+		slideSound = FlxG.sound.load(AssetPaths.slide__wav);
 
 		animation.add("idle", [0]);
 		animation.add("walk", [1,2,3,4,5,0], 12);
@@ -43,7 +48,7 @@ class Player extends FlxSprite {
 		animation.add("fall", [26]);
 		animation.add("dead", [1]);
 		animation.add("hurt", [1]);
-		animation.add("rooted", [31]);
+		animation.add("rooted", [33,35,37]);
 		animation.add("wall", [10]);
 
 		setSize(28, 15);
@@ -149,6 +154,7 @@ class Player extends FlxSprite {
 
 	private function rootCharacter(wall:Int = 0) {
 		if (!noRoot) {
+			slideSound.play();
 			rooted = true;
 		}
 		if (wall == FlxObject.WALL) {
@@ -175,6 +181,10 @@ class Player extends FlxSprite {
 				animation.play("wall");
 			} else {
 				animation.play("rooted");
+				//scale.set(1, 0.5);
+				// var rect = FlxRect.get();
+				// rect.set(x, y, width*2, height);
+				// clipRect(rect);
 			}
 		}
 	}

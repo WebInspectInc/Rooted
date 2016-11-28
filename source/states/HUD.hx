@@ -37,7 +37,7 @@ class HUD extends FlxSpriteGroup {
 	override public function update(elapsed:Float) {
 		//_playerHealth.text = "HEALTH\n" + Reg.health;
 		//_rootTime.text = "ROOT TIME\n" + Reg.rootTime;
-		_debug.text = Reg.log;
+		//_debug.text = Reg.log;
 		super.update(elapsed);
 	}
 }
