@@ -4,25 +4,35 @@ import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxG;
 import flixel.util.FlxTimer;
+import flixel.system.FlxSound;
 
 class Enemy extends FlxSprite {
 	private static inline var GRAVITY:Int = 420;
 	private static inline var WALK_SPEED:Int = 40;
 	private static inline var FALLING_SPEED:Int = 200;
 	private static inline var SCORE_AMOUNT:Int = 100;
+	private static inline var SPRITE_SIZE:Int = 70;
 
-	private var _direction:Int = 1;
+	private var deathSound:FlxSound;
+
+	private var _direction:Int = -1;
 	private var _appeared:Bool = false;
 	private var _deathCount:Int = 20;
-	private var _oppositeDirection:Int = 1;
+	private var _oppositeDirection:Int = -1;
 
 	public function new(x:Float, y:Float) {
 		super(x, y);
 
-		loadGraphic(AssetPaths.tinyenemy__png, true, 32, 32);
-		animation.add("walk", [0, 1, 2, 3, 2, 1], 12);
-		animation.add("dead", [5], 12);
+		loadGraphic(AssetPaths.spritesheet_baddie__png, true, SPRITE_SIZE, SPRITE_SIZE);
+		animation.add("walk", [0, 1, 2, 3, 2, 1], 6);
+		animation.add("dead", [3], 12);
 		animation.play("walk");
+
+		setSize(28, 15);
+		offset.set(20, 34);
+		scale.set(0.6, 0.6);
+
+		deathSound = FlxG.sound.load(AssetPaths.reddeath__wav);
 
 		acceleration.y = GRAVITY;
 		maxVelocity.y = FALLING_SPEED;
@@ -71,7 +81,9 @@ class Enemy extends FlxSprite {
 
 				flipX = _oppositeDirection < 0;
 				_direction = _oppositeDirection;
-			} else {
+			} else if (alive) {
+				deathSound.play();
+				alive = false;
 				kill();
 			}
 		} else {
