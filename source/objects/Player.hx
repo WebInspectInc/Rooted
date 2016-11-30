@@ -37,22 +37,22 @@ class Player extends FlxSprite {
 	public var stationary:Bool = false;
 	public function new() {
 		super();
-		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE, SPRITE_SIZE);
+		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE * 2, SPRITE_SIZE);
 
 		slideSound = FlxG.sound.load(AssetPaths.slide__wav);
 
 		animation.add("idle", [0]);
 		animation.add("walk", [1,2,3,4,5,0], 12);
-		animation.add("skid", [30,31]);
-		animation.add("jump", [21]);
-		animation.add("fall", [26]);
+		animation.add("skid", [23,24]);
+		animation.add("jump", [9]);
+		animation.add("fall", [14]);
 		animation.add("dead", [1]);
 		animation.add("hurt", [1]);
-		animation.add("rooted", [33,35,37]);
-		animation.add("wall", [10]);
+		animation.add("rooted", [17, 18,19], 3);
+		animation.add("wall", [6]);
 
 		setSize(28, 15);
-		offset.set(20, 34);
+		offset.set(74, 34);
 		scale.set(0.5, 0.5);
 
 		health = startHealth;
@@ -69,11 +69,13 @@ class Player extends FlxSprite {
 		acceleration.y = GRAVITY;
 
 		if (FlxG.keys.pressed.LEFT && !rooted) {
+			offset.set(35, 34);
 			flipX = true;
 			direction = -1;
 			velocity.x -= VELOCITY - ACCELERATION;
 			acceleration.x -= ACCELERATION;
 		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
+			offset.set(74, 34);
 			flipX = false;
 			direction = 1;
 			velocity.x += VELOCITY - ACCELERATION;
@@ -155,6 +157,8 @@ class Player extends FlxSprite {
 	private function rootCharacter(wall:Int = 0) {
 		if (!noRoot) {
 			slideSound.play();
+			// trying out speeding up sliding
+			velocity.x = velocity.x * 1.5;
 			rooted = true;
 		}
 		if (wall == FlxObject.WALL) {
