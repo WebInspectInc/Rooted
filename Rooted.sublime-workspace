@@ -168,6 +168,14 @@
 			}
 		},
 		{
+			"file": "source/states/PlayState.hx",
+			"settings":
+			{
+				"buffer_size": 2368,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "source/objects/Door.hx",
 			"settings":
 			{
@@ -179,24 +187,17 @@
 			"file": "source/objects/Player.hx",
 			"settings":
 			{
-				"buffer_size": 4597,
+				"buffer_size": 5018,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/states/PlayState.hx",
-			"settings":
-			{
-				"buffer_size": 2368,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "source/objects/Enemy.hx",
 			"settings":
 			{
-				"buffer_size": 1835,
+				"buffer_size": 2155,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -208,10 +209,26 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 67.0,
-		"last_filter": "buildtar",
+		"height": 61.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"syntaxhaxe",
+				"Set Syntax: Haxe"
+			],
+			[
+				"pclp",
+				"Package Control: List Packages"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
 			[
 				"buildtar",
 				"Haxe: Choose Build Target"
@@ -223,10 +240,6 @@
 			[
 				"haxe",
 				"Haxe: Organize Imports"
-			],
-			[
-				"pcip",
-				"Package Control: Install Package"
 			],
 			[
 				"synthtml",
@@ -255,10 +268,6 @@
 			[
 				"close",
 				"Project: Close"
-			],
-			[
-				"pcrp",
-				"Package Control: Remove Package"
 			],
 			[
 				"sass",
@@ -328,13 +337,15 @@
 	"expanded_folders":
 	[
 		"/Users/howlermiller/haxeprojects/Rooted",
-		"/Users/howlermiller/haxeprojects/Rooted/assets",
-		"/Users/howlermiller/haxeprojects/Rooted/assets/images",
 		"/Users/howlermiller/haxeprojects/Rooted/source",
 		"/Users/howlermiller/haxeprojects/Rooted/source/states"
 	],
 	"file_history":
 	[
+		"/private/var/folders/2q/hzwrbgmj4f79kzvh48dgs73r0000gn/T/c4bcd7ac-01d1-4f7e-a664-b23ae96339db/home/181535/domains/vomitingchicken.com/html/wp-settings.php",
+		"/Users/howlermiller/haxeprojects/Rooted/.gitignore",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states/PlayState.hx",
+		"/Users/howlermiller/haxeprojects/Rooted/source/states/HUD.hx",
 		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxSprite.hx",
 		"/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledObject.hx",
 		"/Users/howlermiller/haxelib/flixel-addons/2,0,0/flixel/addons/editors/tiled/TiledPropertySet.hx",
@@ -345,14 +356,11 @@
 		"/Users/howlermiller/haxeprojects/Rooted/source/Main.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Player.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Enemy.hx",
-		"/Users/howlermiller/haxeprojects/Rooted/source/states/PlayState.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/PlayState.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/HUD.hx",
-		"/Users/howlermiller/haxeprojects/Rooted/source/states/HUD.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/LevelLoader.hx",
 		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxObject.hx",
 		"/Users/howlermiller/haxeprojects/Rooted/source/Platforms.hx",
-		"/Users/howlermiller/haxeprojects/Rooted/.gitignore",
 		"/Users/howlermiller/www/withinthefold/wp-content/themes/within-the-fold/.gitignore",
 		"/Users/howlermiller/haxeprojects/Rooted/.git/config",
 		"/Users/howlermiller/haxelib/flixel/4,0,1/flixel/FlxG.hx",
@@ -461,18 +469,18 @@
 		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/frontend-files.php",
 		"/Users/howlermiller/www/wordpress/wp-content/plugins/within-the-fold/shirts/ajax.php",
 		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/admin.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/within-the-fold.php",
-		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/shirts/shirt-functions.php"
+		"/Users/howlermiller/www/withinthefold/wp-content/plugins/within-the-fold/within-the-fold.php"
 	],
 	"find":
 	{
-		"height": 42.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 109.0,
 		"where_history":
 		[
+			"",
 			"/Users/howlermiller/www/withinthefold/wp-content/plugins/",
 			"/Users/howlermiller/www/wordpress/wp-content/plugins/",
 			"/Users/howlermiller/www/wordpress/wp-content/plugins/stripe",
@@ -511,6 +519,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rtl",
+			"rooted",
+			"32",
+			"();\n",
+			"SPRITE_SIZE",
+			"flxrect",
+			"sprite_size",
 			"Float",
 			"invincib",
 			"invinci",
@@ -631,14 +646,7 @@
 			"shirts_are_purchased",
 			"shirt purchases",
 			"chargeCustomersForProduct",
-			"purchase-shirts",
-			"charge",
-			"charge shirts",
-			"$options",
-			"overlay__hidden",
-			"open_overlay",
-			"payment-overlay",
-			"200px"
+			"purchase-shirts"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -656,7 +664,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -678,6 +686,7 @@
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Dark).tmTheme",
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage"
 						},
@@ -701,27 +710,19 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								98,
+								98
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 150,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Dark).tmTheme",
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 349.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -729,84 +730,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "source/objects/Door.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 694,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								379,
-								379
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 25,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/objects/Player.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3090,
-								3090
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 2,
-								"count": 265,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2244.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "source/states/PlayState.hx",
 					"semi_transient": false,
 					"settings":
@@ -818,8 +741,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								246,
+								201
 							]
 						],
 						"settings":
@@ -829,10 +752,72 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1036.0,
+						"translation.y": 672.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/objects/Door.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								466
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Dark).tmTheme",
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/objects/Player.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1538,
+								1538
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Dark).tmTheme",
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 2.0,
+						"translation.y": 196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -841,28 +826,38 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1835,
+						"buffer_size": 2155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								901,
+								861
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 148,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Dark).tmTheme",
 							"haxe-build-id": 0,
 							"syntax": "Packages/Haxe/Haxe.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 369.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -920,6 +915,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"playstate",
+				"Rooted/source/states/PlayState.hx"
+			],
+			[
+				"gitign",
+				"Rooted/.gitignore"
+			],
 			[
 				"enemy",
 				"Rooted/source/objects/Enemy.hx"
@@ -1423,14 +1426,6 @@
 			[
 				"contpag",
 				"within-the-fold/content-page.php"
-			],
-			[
-				"page.ph",
-				"within-the-fold/page.php"
-			],
-			[
-				"404",
-				"within-the-fold/404.php"
 			]
 		],
 		"width": 0.0

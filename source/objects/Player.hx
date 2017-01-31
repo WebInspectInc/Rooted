@@ -12,13 +12,16 @@ import flixel.system.debug.watch.Tracker;
 import flixel.system.FlxSound;
 
 class Player extends FlxSprite {
-	private static inline var ACCELERATION:Int = 40;
-	private static inline var VELOCITY:Int = 100;
-	private static inline var DRAG:Int = 420;
+	private static inline var ACCELERATION:Int = 10;
+	private static inline var VELOCITY:Int = 60;
+	private static inline var DRAG:Int = 220;
 	private static inline var GRAVITY:Int = 600;
 	private static inline var JUMP_FORCE:Int = -280;
 	private static inline var WALK_SPEED:Int = 140;
-	private static inline var ROOT_SPEED:Int = 200;
+	private static inline var ROOT_SPEED:Int = 20;
+	private static inline var BUFFER_SPEED:Int = 200;
+	private static inline var MAX_SPEED:Int = 300;
+	private static inline var BOUNCE_SPEED:Int = 150;
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 70;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime1__png;
@@ -27,7 +30,9 @@ class Player extends FlxSprite {
 
 	private var startHealth:Float = Reg.health;
 	private var invincibility:Int = 0;
+	private var justBounced:Bool = false;
 
+	public var impactSpeed:Float = 0;
 	public var rootDuration:Int = 100;
 	public var rootTime:Int = Reg.rootTime;
 	public var rooted:Bool = false;
@@ -39,10 +44,10 @@ class Player extends FlxSprite {
 		super();
 		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE * 2, SPRITE_SIZE);
 
-		slideSound = FlxG.sound.load(AssetPaths.slide__wav);
+		//slideSound = FlxG.sound.load(AssetPaths.slide__wav);
 
 		animation.add("idle", [0]);
-		animation.add("walk", [1,2,3,4,5,0], 12);
+		animation.add("walk", [0], 12);
 		animation.add("skid", [23,24]);
 		animation.add("jump", [9]);
 		animation.add("fall", [14]);
@@ -60,7 +65,7 @@ class Player extends FlxSprite {
 		acceleration.y = GRAVITY;
 		maxVelocity.set(WALK_SPEED, FALLING_SPEED);
 
-		FlxG.debugger.addTrackerProfile(new TrackerProfile(Player, ['rooted', 'rootTime', 'direction', 'velocity'], []));
+		FlxG.debugger.addTrackerProfile(new TrackerProfile(Player, ['rooted', 'rootTime', 'direction', 'velocity', 'impactSpeed'], []));
 		FlxG.debugger.track(this, "player");
 	}
 
@@ -84,15 +89,31 @@ class Player extends FlxSprite {
 			//acceleration.x -= ACCELERATION * direction;
 		}
 
+		if (velocity.y != 0) {
+			impactSpeed = velocity.y;
+		}
+
 		if (velocity.y == 0) {
+			if (impactSpeed > BOUNCE_SPEED) {
+				if (!justBounced) {
+					velocity.y = -impactSpeed;
+					impactSpeed = 0;
+					justBounced = true;
+				} else {
+					justBounced = false;
+				}
+			}
+
 			if (FlxG.keys.justPressed.C && (isTouching(FlxObject.FLOOR) || rooted)) {
 				velocity.y = JUMP_FORCE;
 				rooted = false;
 			}
 
-			if (FlxG.keys.pressed.X) {
-				maxVelocity.x = ROOT_SPEED;
-			} else {
+			if (FlxG.keys.pressed.X && maxVelocity.x < MAX_SPEED) {
+				maxVelocity.x += ROOT_SPEED;
+			}
+
+			if (velocity.x < WALK_SPEED && maxVelocity.x > BUFFER_SPEED) {
 				maxVelocity.x = WALK_SPEED;
 			}
 		}
@@ -156,9 +177,9 @@ class Player extends FlxSprite {
 
 	private function rootCharacter(wall:Int = 0) {
 		if (!noRoot) {
-			slideSound.play();
+			//slideSound.play();
 			// trying out speeding up sliding
-			velocity.x = velocity.x * 1.5;
+			velocity.x = velocity.x * 2;
 			rooted = true;
 		}
 		if (wall == FlxObject.WALL) {

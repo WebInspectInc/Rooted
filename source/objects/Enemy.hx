@@ -82,7 +82,7 @@ class Enemy extends FlxSprite {
 				flipX = _oppositeDirection < 0;
 				_direction = _oppositeDirection;
 			} else if (alive) {
-				deathSound.play();
+				//deathSound.play();
 				alive = false;
 				kill();
 			}
