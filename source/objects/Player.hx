@@ -21,7 +21,7 @@ class Player extends FlxSprite {
 	private static inline var ROOT_SPEED:Int = 20;
 	private static inline var BUFFER_SPEED:Int = 200;
 	private static inline var MAX_SPEED:Int = 300;
-	private static inline var BOUNCE_SPEED:Int = 150;
+	private static inline var BOUNCE_SPEED:Int = 250;
 	private static inline var FALLING_SPEED:Int = 300;
 	private static inline var SPRITE_SIZE:Int = 70;
 	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime1__png;
