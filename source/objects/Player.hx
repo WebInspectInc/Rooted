@@ -23,8 +23,10 @@ class Player extends FlxSprite {
 	private static inline var MAX_SPEED:Int = 300;
 	private static inline var BOUNCE_SPEED:Int = 250;
 	private static inline var FALLING_SPEED:Int = 300;
-	private static inline var SPRITE_SIZE:Int = 70;
-	private static inline var MAIN_GRAPHIC:FlxGraphicAsset = AssetPaths.slime1__png;
+	private static inline var SPRITE_WIDTH:Int = 300;
+	private static inline var SPRITE_HEIGHT:Int = 164;
+	private static inline var SLIME_WALK:FlxGraphicAsset = AssetPaths.slime_walk__png;
+	private static inline var SLIME_ROOT:FlxGraphicAsset = AssetPaths.slime_root__png;
 
 	private var slideSound:FlxSound;
 
@@ -32,7 +34,7 @@ class Player extends FlxSprite {
 	private var invincibility:Int = 0;
 	private var justBounced:Bool = false;
 
-	public var impactSpeed:Float = 0;
+	public var impactSpeed:FlxPoint = new FlxPoint();
 	public var rootDuration:Int = 100;
 	public var rootTime:Int = Reg.rootTime;
 	public var rooted:Bool = false;
@@ -42,23 +44,25 @@ class Player extends FlxSprite {
 	public var stationary:Bool = false;
 	public function new() {
 		super();
-		loadGraphic(MAIN_GRAPHIC, true, SPRITE_SIZE * 2, SPRITE_SIZE);
+		loadGraphic(SLIME_WALK, true, SPRITE_WIDTH, SPRITE_HEIGHT);
 
 		//slideSound = FlxG.sound.load(AssetPaths.slide__wav);
 
 		animation.add("idle", [0]);
-		animation.add("walk", [0], 12);
-		animation.add("skid", [23,24]);
+		animation.add("walk", [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], 16);
+		animation.add("skid", [0]);
 		animation.add("jump", [9]);
 		animation.add("fall", [14]);
 		animation.add("dead", [1]);
 		animation.add("hurt", [1]);
-		animation.add("rooted", [17, 18,19], 3);
+		animation.add("rooted", [0], 3);
 		animation.add("wall", [6]);
 
 		setSize(28, 15);
-		offset.set(74, 34);
-		scale.set(0.5, 0.5);
+		scale.set(0.2, 0.2);
+		//updateHitbox();
+		origin.set(80, 40);
+		offset.set(75, 44);
 
 		health = startHealth;
 		drag.x = DRAG;
@@ -74,30 +78,36 @@ class Player extends FlxSprite {
 		acceleration.y = GRAVITY;
 
 		if (FlxG.keys.pressed.LEFT && !rooted) {
-			offset.set(35, 34);
+			//offset.set(35, 34);
 			flipX = true;
 			direction = -1;
 			velocity.x -= VELOCITY - ACCELERATION;
 			acceleration.x -= ACCELERATION;
 		} else if (FlxG.keys.pressed.RIGHT && !rooted) {
-			offset.set(74, 34);
+			//offset.set(74, 34);
 			flipX = false;
 			direction = 1;
 			velocity.x += VELOCITY - ACCELERATION;
 			acceleration.x += ACCELERATION;
-		} else if (!rooted) {
-			//acceleration.x -= ACCELERATION * direction;
 		}
 
-		if (velocity.y != 0) {
-			impactSpeed = velocity.y;
+		if (velocity.x != 0) {
+			if (isTouching(FlxObject.WALL)) {
+				if (impactSpeed.x == 0) {
+					impactSpeed.x = velocity.x;
+					velocity.y -= Math.abs(velocity.x) * 3;
+				}
+			} else {
+				impactSpeed.x = 0;
+			}
 		}
 
 		if (velocity.y == 0) {
-			if (impactSpeed > BOUNCE_SPEED) {
+			// bouncing
+			if (impactSpeed.y > BOUNCE_SPEED) {
 				if (!justBounced) {
-					velocity.y = -impactSpeed;
-					impactSpeed = 0;
+					velocity.y = -impactSpeed.y;
+					impactSpeed.y = 0;
 					justBounced = true;
 				} else {
 					justBounced = false;
@@ -116,6 +126,8 @@ class Player extends FlxSprite {
 			if (velocity.x < WALK_SPEED && maxVelocity.x > BUFFER_SPEED) {
 				maxVelocity.x = WALK_SPEED;
 			}
+		} else { // if velocity.y != 0
+			impactSpeed.y = velocity.y;
 		}
 
 		if ((velocity.y < 0) && (FlxG.keys.justReleased.C)) {
